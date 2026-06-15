@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+<title>Login</title>
+<link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+<div class="container">
+<h1>Login</h1>
+<form action="/login" method="post">
+<input type="email" name="email" placeholder="email" required="required">
+<input type="password" name="password" placeholder="password" required="required">
+<button type="submit">Login</button>
+
+</form>
+<p th:text="${success}"></p>
+<p th:text="${error}"></p>
+<p>Don't Have An Account <span><a href="/register">Signup</a></span></p>
+</div>
+</body>
+</html>
